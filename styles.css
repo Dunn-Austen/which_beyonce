@@ -1,0 +1,239 @@
+* {
+  font-family: 'Open-Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling across all four "pages" */
+header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+}
+
+.hamburger-menu {
+  height: 100%;
+  width: 95px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-right: 6rem;
+  margin-top: .6rem;
+  text-transform: uppercase;
+}
+
+/*Control Background Beyonce on page one */
+.main__style--one {
+  align-items: center;
+  /* 4TH is opacity */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .16)), url("images/beyonce-COB-bw.png");
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-position: 52.5% 31%;
+  background-size: 170% 260%;
+  display: flex;
+  height: 88vh;
+  justify-content: center;
+}
+
+.page__one--content {
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  margin-bottom: 9rem;
+  width: 100%;
+}
+
+form {
+  height: 110%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.form__positioning--container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.left__input--container {
+  width: 45%;
+}
+
+.right__input--container {
+  margin-right: -2rem;
+  width: 45%;
+}
+
+input {
+  font-size: 26px;
+  height: 50px;
+  width: 90%;
+}
+
+label {
+  display: block;
+  font-size: 26px;
+  padding-top: .3rem;
+}
+
+.play__btn--one {
+  background-color: black;
+  color: white;
+  font-size: 26px;
+  height: 60px;
+  width: 100%;
+}
+
+.error-styling {
+  border: 2px solid pink;
+}
+
+/* Page two stylings */
+/* Styling hides page two content until btn click */
+.page__two--content {
+  display: none;
+}
+
+/* Styling controls background image extension */
+.main__style--two {
+  align-items: center;
+  /* 4TH is opacity */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .16)), url("images/beyonce-COB-bw.png");
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-position: 52.5% 40%;
+  background-size: 130% 175%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+
+.page__two--reveal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  margin-top: 80px;
+  justify-content: center;
+  width: 48%;
+}
+
+.p__positioning--container {
+  margin-bottom: 20px;
+}
+
+.play__btn--two {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+article p {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+/* Page Three Style */
+.main__style--three {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.page__three--container {
+  display: none;
+}
+
+.page__three--reveal {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-aside {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 15%;
+}
+
+.left__aside--top {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.left__aside--middle {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.left__aside--bottom {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.page__three--center {
+  border: 10px solid red;
+  width: 67%;
+}
+
+.right-aside {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 15%;
+}
+
+.right__aside--top {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.right__aside--middle {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.right__aside--bottom {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
