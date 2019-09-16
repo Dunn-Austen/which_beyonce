@@ -90,3 +90,44 @@ function playGameSecondClick() {
   displayPageThree();
   pushNameValuesTwo();
 }
+
+// Function for card flip - invoked via respective onClick events in HTML
+function flipRespectiveCard() {
+  if (event.target.classList.contains('rotation-one')) {
+    event.target.innerHTML = '<img src="images/bey1.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('large__two--cell')) {
+    event.target.innerHTML = '<img src="images/bey1.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-three')) {
+    event.target.innerHTML = '<img src="images/bey2.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-four')) {
+    event.target.innerHTML = '<img src="images/bey2.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-five')) {
+    event.target.innerHTML = '<img src="images/bey3.jpeg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-six')) {
+    event.target.innerHTML = '<img src="images/bey3.jpeg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-seven')) {
+    event.target.innerHTML = '<img src="images/bey4.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-eight')) {
+    event.target.innerHTML = '<img src="images/bey4.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('large__nine--cell')) {
+    event.target.innerHTML = '<img src="images/bey5.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+  if (event.target.classList.contains('rotation-ten')) {
+    event.target.innerHTML = '<img src="images/bey5.jpg" class="card-img" alt="Image of Beyonce">';
+  }
+}
+
+// On the left hand side of the page, the player should see their name and the number of “Matches This Round”
+// User should only be able to flip over two cards at a time.
+// If the two flipped cards match, they should disappear and the “Matches This Round” count should increase.
+// If the cards don’t match, the user can re-click them to turn them back over.
+// User continues to click until they find all matches
+// Once all matches are found, the user should see a congratulatory message including their name.

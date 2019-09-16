@@ -26,7 +26,6 @@
             </div>
             <div class="right__input--container" role="Grouping container for convenient input & label styling with CSS">
               <input class="player-two-input" type="text" maxlength=”32” onkeyup="return removeRightErrorStyling()" />
-              <!-- Consider adding BR rather than altering margins -->
               <label class="right-label">Player 2</label>
             </div>
           </div>
@@ -59,15 +58,15 @@
       <!-- Page three elements -->
         <section class="page__three--container">
           <aside class="left-aside">
-            <div class="left__aside--top" role="Allows for convenient segregation of the left-aside into differentially styled compartments">
+            <div class="left__aside--top" role="Allows for convenient segregation of the left-aside element into differentially styled compartments">
               <h3 class="player__one--name"></h3>
               <p class="top-player">#4 Top Player</p>
             </div>
-            <div class="left__aside--middle" role="Allows for convenient segregation of the aside into differentially styled compartments">
+            <div class="left__aside--middle" role="Allows for convenient segregation of the left-aside element into differentially styled compartments">
               <p>MATCHES <br/> THIS ROUND</p>
               <p id="left__matches--insert">9</p>
             </div>
-            <div class="left__aside--bottom" role="Allows for convenient segregation of the aside into differentially styled compartments">
+            <div class="left__aside--bottom" role="Allows for convenient segregation of the left-aside element into differentially styled compartments">
               <h3>GAME WINS</h3>
               <p>
                 ROUND 1
@@ -82,39 +81,43 @@
             </div>
           </aside>
           <section class="page__three--center">
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-one" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              <!-- Is it better to use font-style with CSS rather than introducing these strong tags in the HTML? -->
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="large__two--cell" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-three" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-four" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-five" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-six" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-seven" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="small__cell--styling rotation-eight" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
-            <div class="all__card--styling">
-
+            <div class="large__nine--cell" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-ten" role="Represents one of ten cards with which the user may interact" onclick="return flipRespectiveCard()">
+              B
             </div>
           </section>
           <aside class="right-aside">
             <div class="right__aside--top" role="Allows for convenient segregation of the right-aside into differentially styled compartments">
               <h3 class="player__two--name">PLAYER 2 NAME</h3>
             </div>
-            <div class="right__aside--middle">
+            <div class="right__aside--middle" role="Allows for convenient segregation of the right-aside element into differentially styled compartments">
               <p>
                 MATCHES
                 <br />
@@ -122,7 +125,7 @@
               </p>
               <p id="right__matches--insert">3</p>
             </div>
-            <div class="right__aside--bottom">
+            <div class="right__aside--bottom" role="Allows for convenient segregation of the right-aside element into differentially styled compartments">
               <h3>GAME WINS</h3>
               <p>
                 ROUND 2
