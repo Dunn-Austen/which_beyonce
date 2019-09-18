@@ -112,7 +112,6 @@ label {
   justify-content: center;
 }
 
-
 .page__two--reveal {
   align-items: center;
   display: flex;
@@ -252,6 +251,11 @@ aside p {
   justify-content: center;
   height: 165px;
   width: 56%;
+}
+
+.replacement-b {
+  font-size: 100px;
+  font-weight: bold;
 }
 
 .rotation-one {

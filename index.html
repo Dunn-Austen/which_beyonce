@@ -17,25 +17,25 @@
     <main class="main__style--one">
       <section class="page__one--content">
         <form action="index.html" method="post">
-          <div class="form__positioning--container" role="Represents convenient use of an extra container for easier positioning via CSS">
-            <div class="left__input--container" role="Grouping container for convenient input & label styling with CSS">
+          <div class="form__positioning--container" role="styling & positioning">
+            <div class="left__input--container" role="styling & positioning">
               <!-- Maxlength isn't working despite being valid with input type=text -->
               <!-- Consider resolving it with javascript instead -->
               <input class="player-one-input" type="text" maxlength=”32” onkeyup="return removeLeftErrorStyling()" />
               <label class="left-label">Player 1</label>
             </div>
-            <div class="right__input--container" role="Grouping container for convenient input & label styling with CSS">
+            <div class="right__input--container" role="for styling & positioning">
               <input class="player-two-input" type="text" maxlength=”32” onkeyup="return removeRightErrorStyling()" />
               <label class="right-label">Player 2</label>
             </div>
           </div>
-          <button class="play__btn--one">Play Game</button>
+          <button class="play__btn--one" role="page transition">Play Game</button>
         </form>
       </section>
       <!-- Page two elements -->
       <article class="page__two--content">
         <h2 class="page__two--header"></h2>
-        <div class="p__positioning--container" role="Grouping container used solely for easier positioning of page two text">
+        <div class="p__positioning--container" role="text grouping & styling">
           <p>
               The goal of the game is to find all 5 pairs of cards as quickly as
               possible. The player that finds the greatest number of pairs, wins.
@@ -53,20 +53,20 @@
               it took to win the game.
           </p>
         </div>
-        <button class="play__btn--two">Play Game</button>
+        <button class="play__btn--two" role="page transition">Play Game</button>
       </article>
       <!-- Page three elements -->
         <section class="page__three--container">
           <aside class="left-aside">
-            <div class="left__aside--top" role="Allows for convenient segregation of the left-aside element into differentially styled compartments">
+            <div class="left__aside--top" role="stratifies content">
               <h3 class="player__one--name"></h3>
               <p class="top-player">#4 Top Player</p>
             </div>
-            <div class="left__aside--middle" role="Allows for convenient segregation of the left-aside element into differentially styled compartments">
+            <div class="left__aside--middle" role="stratifies content">
               <p>MATCHES <br/> THIS ROUND</p>
               <p id="left__matches--insert">9</p>
             </div>
-            <div class="left__aside--bottom" role="Allows for convenient segregation of the left-aside element into differentially styled compartments">
+            <div class="left__aside--bottom" role="stratifies content">
               <h3>GAME WINS</h3>
               <p>
                 ROUND 1
@@ -81,42 +81,42 @@
             </div>
           </aside>
           <section class="page__three--center">
-            <div class="small__cell--styling rotation-one" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey1" onclick="return flipRespectiveCard()" reverseFlipCard>
+            <div class="small__cell--styling rotation-one" role="button" data-matchinfo="bey1" onclick="return flipRespectiveCard()" reverseFlipCard>
               B
             </div>
-            <div class="large__two--cell" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey1" onclick="return flipRespectiveCard()">
+            <div class="large__two--cell" role="button" data-matchinfo="bey1" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-three" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey2" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-three" role="button" data-matchinfo="bey2" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-four" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey2" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-four" role="button" data-matchinfo="bey2" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-five" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey3" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-five" role="button" data-matchinfo="bey3" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-six" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey3" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-six" role="button" data-matchinfo="bey3" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-seven" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey4" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-seven" role="button" data-matchinfo="bey4" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-eight" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey4" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-eight" role="button" data-matchinfo="bey4" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="large__nine--cell" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey5" onclick="return flipRespectiveCard()">
+            <div class="large__nine--cell" role="button" data-matchinfo="bey5" onclick="return flipRespectiveCard()">
               B
             </div>
-            <div class="small__cell--styling rotation-ten" role="Represents one of ten cards with which the user may interact" data-matchinfo="bey5" onclick="return flipRespectiveCard()">
+            <div class="small__cell--styling rotation-ten" role="button" data-matchinfo="bey5" onclick="return flipRespectiveCard()">
               B
             </div>
           </section>
           <aside class="right-aside">
-            <div class="right__aside--top" role="Allows for convenient segregation of the right-aside into differentially styled compartments">
+            <div class="right__aside--top" role="stratifies content">
               <h3 class="player__two--name">PLAYER 2 NAME</h3>
             </div>
-            <div class="right__aside--middle" role="Allows for convenient segregation of the right-aside element into differentially styled compartments">
+            <div class="right__aside--middle" role="stratifies content">
               <p>
                 MATCHES
                 <br />
@@ -124,7 +124,7 @@
               </p>
               <p id="right__matches--insert">3</p>
             </div>
-            <div class="right__aside--bottom" role="Allows for convenient segregation of the right-aside element into differentially styled compartments">
+            <div class="right__aside--bottom" role="stratifies content">
               <h3>GAME WINS</h3>
               <p>
                 ROUND 2
