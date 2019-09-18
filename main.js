@@ -162,13 +162,3 @@ function instantiateCards() {
 // Function invocation on page load - generating a Deck instance loaded with a single property with the value of an array of the Card objects
 instantiateCards();
 console.log(deck1);
-
-
-
-// Non-functionalTemplate for matching functionallity - Not Mine
-// function disappearMatchedCards() {
-//     for (var i = 0; i < matched.length; i++) {
-//         if (matched[i].matchInfo === matched[i].matchInfo) {
-//         }
-//     }
-// }
