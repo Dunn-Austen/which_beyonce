@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+    rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Beyonce</title>
+  </head>
+  <body>
+    <header>
+      <img class="hamburger-menu" src="images/nav-button.png" alt="Hamburger menu icon">
+      <h1>Which Beyoncé</h1>
+      <div role="Empty placeholder element that makes it easier to space the header child elements"></div>
+    </header>
+    <main class="main__style--one">
+      <section class="page__one--content">
+        <form action="index.html" method="post">
+          <div class="form__positioning--container" role="styling & positioning">
+            <div class="left__input--container" role="styling & positioning">
+              <!-- Maxlength isn't working despite being valid with input type=text -->
+              <!-- Consider resolving it with javascript instead -->
+              <input class="player-one-input" type="text" maxlength=”32” onkeyup="return removeLeftErrorStyling()" />
+              <label class="left-label">Player 1</label>
+            </div>
+            <div class="right__input--container" role="for styling & positioning">
+              <input class="player-two-input" type="text" maxlength=”32” onkeyup="return removeRightErrorStyling()" />
+              <label class="right-label">Player 2</label>
+            </div>
+          </div>
+          <button class="play__btn--one" role="page transition">Play Game</button>
+        </form>
+      </section>
+      <!-- Page two elements -->
+      <article class="page__two--content">
+        <h2 class="page__two--header"></h2>
+        <div class="p__positioning--container" role="text grouping & styling">
+          <p>
+              The goal of the game is to find all 5 pairs of cards as quickly as
+              possible. The player that finds the greatest number of pairs, wins.
+          </p>
+          <p>
+              To begin playing, the player whose name is highlighted can click
+              any card in the card pile. It will flip over and reveal a picture of
+              Beyonce. Click another card. If they match, they will disappear and
+              you will have completed a match! If they don't, you'll have three
+              seconds to look at them before they flip back over. Then it's time for the
+              other player to try!
+          </p>
+          <p>
+              After you play, you'll see the name of the final winner and how long
+              it took to win the game.
+          </p>
+        </div>
+        <button class="play__btn--two" role="page transition">Play Game</button>
+      </article>
+      <!-- Page three elements -->
+        <section class="page__three--container">
+          <aside class="left-aside">
+            <div class="left__aside--top" role="stratifies content">
+              <h3 class="player__one--name"></h3>
+              <p class="top-player">#4 Top Player</p>
+            </div>
+            <div class="left__aside--middle" role="stratifies content">
+              <p>MATCHES <br/> THIS ROUND</p>
+              <p id="left__matches--insert">9</p>
+            </div>
+            <div class="left__aside--bottom" role="stratifies content">
+              <h3>GAME WINS</h3>
+              <p>
+                ROUND 1
+                <br>
+                <span class="round__one--seconds">125.75 SECONDS</span>
+              </p>
+              <p>
+                ROUND 4
+                <br>
+                <span class="round__four--seconds">63.98 SECONDS</span>
+              </p>
+            </div>
+          </aside>
+          <section class="page__three--center">
+            <div class="small__cell--styling rotation-one" role="button" data-matchinfo="bey1" onclick="return flipRespectiveCard()" reverseFlipCard>
+              B
+            </div>
+            <div class="large__two--cell" role="button" data-matchinfo="bey1" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-three" role="button" data-matchinfo="bey2" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-four" role="button" data-matchinfo="bey2" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-five" role="button" data-matchinfo="bey3" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-six" role="button" data-matchinfo="bey3" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-seven" role="button" data-matchinfo="bey4" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-eight" role="button" data-matchinfo="bey4" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="large__nine--cell" role="button" data-matchinfo="bey5" onclick="return flipRespectiveCard()">
+              B
+            </div>
+            <div class="small__cell--styling rotation-ten" role="button" data-matchinfo="bey5" onclick="return flipRespectiveCard()">
+              B
+            </div>
+          </section>
+          <aside class="right-aside">
+            <div class="right__aside--top" role="stratifies content">
+              <h3 class="player__two--name">PLAYER 2 NAME</h3>
+            </div>
+            <div class="right__aside--middle" role="stratifies content">
+              <p>
+                MATCHES
+                <br />
+                THIS ROUND
+              </p>
+              <p id="right__matches--insert">3</p>
+            </div>
+            <div class="right__aside--bottom" role="stratifies content">
+              <h3>GAME WINS</h3>
+              <p>
+                ROUND 2
+                <br>
+                <span class="round__two--seconds">231.7 SECONDS</span>
+              </p>
+              <p>
+                ROUND 3
+                <br>
+                <span class="round__three--seconds">98.2 SECONDS</span>
+              </p>
+              <p>
+                ROUND 5
+                <br>
+                <span class="round__five--seconds">106.34 SECONDS</span>
+              </p>
+            </div>
+          </aside>
+        </section>
+    </main>
+    <script type="text/javascript" src="card.js"></script>
+    <script type="text/javascript" src="deck.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
